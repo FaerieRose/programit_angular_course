@@ -32,7 +32,7 @@ git add .
 git commit -m "Initial commit"
 ```
 
-Create a *remote repository* for this project on the service of your choice.
+Create a *remote repository* for this project on the on GitHub.
 
 Grab its address (e.g. *`https://github.com/<git-name>/my-proj.git`*) and push the *local repo* to the *remote*.
 ```bash
