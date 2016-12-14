@@ -45,3 +45,11 @@ git push -u origin master
 npm install
 npm start
 ```
+A new empty window will be displayed in your browser. Now we will start adding code.
+
+## Notes
+
+This is a simplified version of the <a href="https://github.com/angular/quickstart.git" target="_blank" title="QuickStart project">QuickStart project</a> that was cloned on 
+14-Dec-2016. Angular dependencies are version 2.3.0. All elements for testing have been removed. 
+
+
