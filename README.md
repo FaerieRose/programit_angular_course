@@ -41,8 +41,11 @@ git push -u origin master
 ```
 ## Install npm packages
 
+Elements from *Bootstrap* will be used so that package will have to be installed after basic npm install. 
+Document for *Boostrap* can be found <a href="http://v4-alpha.getbootstrap.com/getting-started/introduction/">here</a>.
 ```bash
 npm install
+npm install bootstrap@4.0.0-alpha.5
 npm start
 ```
 A new empty window will be displayed in your browser. Now we will start adding code.
