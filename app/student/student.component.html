@@ -1,7 +1,7 @@
 <h1>Student</h1>
 <div>
   <label>Voer nr in:</label><input [(ngModel)]="studId"><br>
-  <p *ngIf="studId == 1">Naam student 1: {{ student1.firstName }} {{ student1.lastName }}</p>
+  <p *ngIf="studId == 1 && student1">Naam student 1: {{ student1.firstName }} {{ student1.lastName }}</p>
   <p *ngIf="student2">Naam student 2: {{ student2.firstName }} {{ student2.lastName }}</p>
   <br>
   <button (click)="loadStudent2()">Load Student2</button>

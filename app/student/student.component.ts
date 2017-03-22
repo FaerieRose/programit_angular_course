@@ -10,17 +10,22 @@ import { StudentService } from './student.service';
   providers: [ StudentService ]
 })
 export class StudentComponent  { 
-  student1: Student = new Student;
+  student1: Student;
   student2: Student;
   students: Student[] = [];
-  studId: number;
+  studId: number = 1;
 
   constructor(private studentService: StudentService) {
     // this.student1.id = 1;
     // this.student1.firstName = "Jynn";
     // this.student1.lastName = "Erso";
     // this.student1.studieRichting = "Demolition";
-    this.student1 = this.studentService.getStudent(1);
+    // this.student1 = this.studentService.getStudent(1);
+    this.studentService.getStudentById(1).subscribe(student => {
+      console.log("Student call success");
+      console.log(student);
+      this.student1 = student;
+    });
     this.student2 = this.studentService.getStudent(2);
     console.log(this.student1);
   }
