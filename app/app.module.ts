@@ -4,8 +4,9 @@ import { FormsModule }   from '@angular/forms';
 
 import './rxjs-extensions';
 
-import { AppComponent }     from './app.component';
-import { StudentComponent } from './student/student.component';
+import { AppComponent }        from './app.component';
+import { StudentComponent }    from './student/student.component';
+import { VerenigingComponent } from './vereniging/vereniging.component';
 
 @NgModule({
   imports: [ 
@@ -14,7 +15,8 @@ import { StudentComponent } from './student/student.component';
   ],
   declarations: [ 
     AppComponent, 
-    StudentComponent 
+    StudentComponent,
+    VerenigingComponent
   ],
   bootstrap:    [ AppComponent ]
 })
