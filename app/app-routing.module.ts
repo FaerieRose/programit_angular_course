@@ -1,13 +1,12 @@
 import { NgModule }              from '@angular/core';
 import { RouterModule, Routes }  from '@angular/router';
-import { StudentComponent }      from './student/student.component';
 import { VerenigingComponent }   from './vereniging/vereniging.component';
 
 import './rxjs-extensions';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/student', pathMatch: 'full' },
-  { path: 'student',          component: StudentComponent },
+  { path: '', redirectTo: '/student/stud', pathMatch: 'full' },
+  { path: 'student',          loadChildren: 'app/student/student.module#StudentModule' },
   { path: 'vereniging',       component: VerenigingComponent }
 ];
 

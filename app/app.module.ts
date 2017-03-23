@@ -5,7 +5,6 @@ import { HttpModule }    from '@angular/http';
 
 import { AppRoutingModule }    from './app-routing.module';
 import { AppComponent }        from './app.component';
-import { StudentComponent }    from './student/student.component';
 import { VerenigingComponent } from './vereniging/vereniging.component';
 
 @NgModule({
@@ -17,7 +16,6 @@ import { VerenigingComponent } from './vereniging/vereniging.component';
   ],
   declarations: [ 
     AppComponent, 
-    StudentComponent, 
     VerenigingComponent 
   ],
   bootstrap:    [ AppComponent ]
