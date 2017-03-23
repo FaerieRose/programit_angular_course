@@ -13,6 +13,7 @@ export class StudentComponent  {
   student1: Student;
   student2: Student;
   students: Student[] = [];
+  student: Student = new Student;
   studId: number = 1;
 
   constructor(private studentService: StudentService) {
@@ -37,7 +38,18 @@ export class StudentComponent  {
   }
 
   fillStudents() {
-    this.students.push(this.student1);
-    this.students.push(this.student2);
+    // this.students.push(this.student1);
+    // this.students.push(this.student2);
+    this.studentService.getStudents().subscribe(students => {
+      console.log("Student call success");
+      console.log(students);
+      this.students = students;
+    });
+  }
+
+  postStudent() {
+    this.studentService.postStudent(this.student).subscribe(txt => {
+      console.log(txt);
+    });
   }
 }

@@ -15,9 +15,14 @@
     <!-- Col 1: 25% of width: side Bar               -->
     <div class="col-md-3 divCol" id="divColSideBar">
       <h2>Bootstrap</h2>
-      <a href="http://v4-alpha.getbootstrap.com/layout/grid/">>Grid</a><br>
+      <a href="http://v4-alpha.getbootstrap.com/layout/grid/">>Grid</a>
+      <br>
       <a href="http://v4-alpha.getbootstrap.com/components/buttons/">>Buttons</a>
+      <br>
       <h2>Info</h2>
+      <a class="nav-link" routerLink="/student" routerLinkActive="active">>Student</a>
+      <br>
+      <a class="nav-link" routerLink="/vereniging" routerLinkActive="active">>Vereniging</a>
     </div>
 
     <!-- Col 2: 75% of width: main window            -->
@@ -30,8 +35,9 @@
 
       <input [(ngModel)]="title"><br>
       <input [(ngModel)]="nr">Het ingevoerde getal is {{ nr }}<br>
-      <my-student></my-student>
-      <my-vereniging></my-vereniging>
+      <div id="divRouterOutlet">
+        <router-outlet></router-outlet>
+      </div>
     </div>
   </div>
 

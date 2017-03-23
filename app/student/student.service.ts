@@ -25,8 +25,12 @@ export class StudentService {
 
   private headers = new Headers({ 'Content-Type': 'application/json' }); 
   postStudent(student: Student) {
+    console.log(JSON.stringify(student));
+    let jsonStr = JSON.stringify(student);
     return this.http.post("http://localhost:8081/api/students", JSON.stringify(student), { headers: this.headers }).map(res => {
+      console.log(res);
       console.log("New student id = " + res.text());
+      return res.text();
     });
   }
   
