@@ -1,0 +1,7 @@
+<h1>Student Create</h1>
+<div>
+  <label for="firstname">First Name:</label><input id="firstname" name="firstname" [(ngModel)]="student.firstName">
+  <label for="lastname">Last Name:</label><input id="lastname" name="lastname" [(ngModel)]="student.lastName">
+  <button (click)="postStudent()">Post Student</button>
+  <p id="reply" *ngIf="studId > 0">studId</p>
+</div>

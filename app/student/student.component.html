@@ -1,4 +1,4 @@
-<h1>Student</h1>
+<h1>Student Overview</h1>
 <div>
   <label>Voer nr in:</label><input [(ngModel)]="studId"><br>
   <p *ngIf="studId == 1 && student1">Naam student 1: {{ student1.firstName }} {{ student1.lastName }}</p>
@@ -12,9 +12,4 @@
       <li *ngFor="let student of students">{{ student.firstName }}</li>
     </ul>
   </div>
-</div>
-<div>
-  <input [(ngModel)]="student.firstName">
-  <input [(ngModel)]="student.lastName">
-  <button (click)="postStudent()">Post Student</button>
 </div>
