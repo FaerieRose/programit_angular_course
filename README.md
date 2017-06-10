@@ -1,5 +1,9 @@
 # ProgramIT - Angular Course
 
+## Background
+
+This is demo for students following the ProgramIT course for Java Phase II.
+
 ## Prerequisites
 
 Node.js and npm are essential to Angular development. To ensure proper working, install NodeJS v6.9.2 and nom 3.10.9. To check this, type in a terminal/console 
